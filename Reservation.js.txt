@@ -1,0 +1,29 @@
+﻿let salle = [[0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0]];//Définition d'un tableau
+var places = 0;//Création de la variable "places"
+
+function reserver(x,y)
+{
+  let casecochee = "case"+x+y;//Choix de la place
+  var classe = document.getElementById(casecochee);
+  if (salle[y][x]===0)
+  {
+    places=places+1
+    classe.className="selectionnee"
+    salle[y][x]=1
+   }//Sélection d'une place
+  else
+    {
+      if(classe.className==="reservee"){
+        alert("Cette place est déjà réservée.");//Alerte si la place est réservée
+      }
+      else
+        {
+          places=places-1
+          classe.className="libre"
+          salle[y][x]=0
+         }//Désélection d'une place
+    }
+document.NbPlaces.output.value=places;//Affichage du nombre de places dans la page html
+var prix = places*15;
+document.NbPlaces.total.value=prix;//Affichage du prix dans la page html
+}

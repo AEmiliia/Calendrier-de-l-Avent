@@ -1,0 +1,28 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<title>Paiement</title>
+<link rel="stylesheet" href="Style.css"/>
+</head>
+
+<body bgcolor=#3084f2> 
+<center>
+<br>
+
+<form name = "Payer" action="Chargement.html" method="GET">
+<p> <font size="35"> Total: <span id="Tarif"></span> € </font> 
+<br>
+Nom: <input type="text"  inputmode="text" name="Nom" value="" id="Nom" size="10"><br>
+Prénom: <input type="text" inputmode="text" name="Prenom" value="" id="Prenom" size="10"><br>
+Email: <input type="email"  pattern=".+@email\.com" size="10" id="Email" required><br>
+N° carte bleue: <input type="number" id="Num" required maxlength="16" size="17" ><br>
+Cryptogramme visuel: <input type="number" name="Code" value="" id="Code" size="4" required maxlength="16" ><br>
+Fin de validité: <input type="month" id="Date" name="Date"
+       min="2022-02" value="2022-02">
+
+</p>
+    <input type="submit" value="Valider" />
+</form>
+<a href="Reservation.html" onclick=reserver()> Retour au site </a>
+<script src="Paiement.js"></script>
+</body>

@@ -1,0 +1,94 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="Style.css"/>
+</head>
+
+<body bgcolor=#4E8DFB>
+
+<table align=center border=1 borderColor = white>
+<tr>
+<td height=60 width=60 id=case00 onclick="reserver(0,0)" class="libre"></td>
+<td width=60 id=case10 onclick="reserver(1,0)" class="libre"></td>
+<td width=60 id=case20 onclick="reserver(2,0)" class="libre"></td>
+<td width=60 id=case30 onclick="reserver(3,0)" class="libre"></td>
+<td width=60 id=case40 onclick="reserver(4,0)" class="libre"></td>
+<td width=60 id=case50 onclick="reserver(5,0)" class="libre"></td>
+<td width=60 id=case60 onclick="reserver(6,0)" class="libre"></td>
+<td width=60 id=case70 onclick="reserver(7,0)" class="libre"></td></tr>
+
+<tr>
+<td height=60 width=60 id=case01 onclick="reserver(0,1)" class="libre"></td>
+<td width=60 id=case11 onclick="reserver(1,1)" class="libre"></td>
+<td width=60 id=case21 onclick="reserver(2,1)" class="libre"></td>
+<td width=60 id=case31 onclick="reserver(3,1)" class="libre"></td>
+<td width=60 id=case41 onclick="reserver(4,1)" class="libre"></td>
+<td width=60 id=case51 onclick="reserver(5,1)" class="libre"></td>
+<td width=60 id=case61 onclick="reserver(6,1)" class="libre"></td>
+<td width=60 id=case71 onclick="reserver(7,1)" class="libre"></td></tr>
+
+<tr>
+<td height=60 width=60 id=case02 onclick="reserver(0,2)" class="libre"></td>
+<td width=60 id=case12 onclick="reserver(1,2)" class="libre"></td>
+<td width=60 id=case22 onclick="reserver(2,2)" class="libre"></td>
+<td width=60 id=case32 onclick="reserver(3,2)" class="libre"></td>
+<td width=60 id=case42 onclick="reserver(4,2)" class="libre"></td>
+<td width=60 id=case52 onclick="reserver(5,2)" class="libre"></td>
+<td width=60 id=case62 onclick="reserver(6,2)" class="libre"></td>
+<td width=60 id=case72 onclick="reserver(7,2)" class="libre"></td>
+
+<tr>
+<td height=60 width=60 id=case03 onclick="reserver(0,3)" class="libre"></td>
+<td width=60 id=case13 onclick="reserver(1,3)" class="libre"></td>
+<td width=60 id=case23 onclick="reserver(2,3)" class="libre"></td>
+<td width=60 id=case33 onclick="reserver(3,3)" class="libre"></td>
+<td width=60 id=case43 onclick="reserver(4,3)" class="libre"></td>
+<td width=60 id=case53 onclick="reserver(5,3)" class="libre"></td>
+<td width=60 id=case63 onclick="reserver(6,3)" class="libre"></td>
+<td width=60 id=case73 onclick="reserver(7,3)" class="libre"></td></tr>
+
+<tr>
+<td height=60 width=60 id=case04 onclick="reserver(0,4)" class="libre"></td>
+<td width=60 id=case14 onclick="reserver(1,4)" class="libre"></td>
+<td width=60 id=case24 onclick="reserver(2,4)" class="libre"></td>
+<td width=60 id=case34 onclick="reserver(3,4)" class="libre"></td>
+<td width=60 id=case44 onclick="reserver(4,4)" class="libre"></td>
+<td width=60 id=case54 onclick="reserver(5,4)" class="libre"></td>
+<td width=60 id=case64 onclick="reserver(6,4)" class="libre"></td>
+<td width=60 id=case74 onclick="reserver(7,4)" class="libre"></td></tr>
+
+
+<tr>
+<td height=60 width=60 id=case05 onclick="reserver(0,5)" class="libre"></td>
+<td width=60 id=case15 onclick="reserver(1,5)" class="libre"></td>
+<td width=60 id=case25 onclick="reserver(2,5)" class="libre"></td>
+<td width=60 id=case35 onclick="reserver(3,5)" class="libre"></td>
+<td width=60 id=case45 onclick="reserver(4,5)" class="libre"></td>
+<td width=60 id=case55 onclick="reserver(5,5)" class="libre"></td>
+<td width=60 id=case65 onclick="reserver(6,5)" class="libre"></td>
+<td width=60 id=case75 onclick="reserver(7,5)" class="libre"></td></tr>
+
+<tr>
+<td height=60 width=60 id=case06 onclick="reserver(0,6)" class="libre"></td>
+<td width=60 id=case16 onclick="reserver(1,6)" class="libre"></td>
+<td width=60 id=case26 onclick="reserver(2,6)" class="libre"></td>
+<td width=60 id=case36 onclick="reserver(3,6)" class="libre"></td>
+<td width=60 id=case46 onclick="reserver(4,6)" class="libre"></td>
+<td width=60 id=case56 onclick="reserver(5,6)" class="libre"></td>
+<td width=60 id=case66 onclick="reserver(6,6)" class="libre"></td>
+<td width=60 id=case76 onclick="reserver(7,6)" class="libre"></td></tr>
+</table>
+
+
+<br>
+<p id="scene">Scène</p><br>
+<p> Nombres de places :<p>
+
+<form name = "NbPlaces" action="Paiement.html" method="GET">
+    <input type="text" name="output" /><br>
+    <input type="text" name="total" />
+    <input type="submit" value="Valider" />
+</form>
+<script src="Reservation.js"></script>
+</body>
+</html>

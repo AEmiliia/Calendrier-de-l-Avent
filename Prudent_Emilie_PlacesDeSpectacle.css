@@ -1,0 +1,33 @@
+﻿p{
+font-size : 25px;
+color : white;
+}
+
+h1{
+color : white;
+}
+
+.bouton{
+color : white;
+background-color : #005C53;
+font-size : 20px;
+}
+
+.reservee{
+  background-color : #a97472;
+}
+
+.selectionnee{
+  background-color : #7fc8ff;
+}
+
+.libre{
+  background-color : #e7e5e4;
+}
+
+#scene{
+color : white;
+text-align: center;
+font-size : 25px;
+background-color : #994F11;
+}
